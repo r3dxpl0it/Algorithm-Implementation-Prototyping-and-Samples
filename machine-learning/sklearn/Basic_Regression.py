@@ -1,11 +1,10 @@
-
+import numpy as np
+from statistics import mean
+import matplotlib.pyplot as plt
 
 #X_var = np.array([1 , 2, 3 ,4, 5 , 6] , dtype = np.float64)
 #Y_var = np.array([5 ,4 ,6, 5, 6 ,7] , dtype = np.float64)
 
-
-import numpy as np
-from statistics import mean
 #import warnings
 class Basic_Regression:
 	def __init__(self,x , y ):
@@ -37,7 +36,6 @@ class Basic_Regression:
 		return 1 - (self.mean_squared_err(self.y , self.fit(self.x , self.y))
 			   / self.mean_squared_err(self.y , y_mean_ln))
 	def draw(self , over_right = False):
-		import matplotlib.pyplot as plt
 		if over_right != True:
 			plt.cla()
 		plt.scatter(self.x, self.y)
