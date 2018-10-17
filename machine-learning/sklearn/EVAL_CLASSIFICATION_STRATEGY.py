@@ -46,6 +46,7 @@ class Classification_Strategy_Method:
 		self.y = y
 		self.x_original = x
 		self.y_original = y
+		self.verbose = True 
 	def Methods_Lists(X):
 		out = {
 				0:"K-Nearest" ,
@@ -75,7 +76,7 @@ class Classification_Strategy_Method:
 		self.knear.fit(self.x , self.y)
 		if Split != False :
 			self.kscore = self.knear.score(self.x_t , self.y_t)
-		if verbose is True :
+		if self.verbose is True :
 			print("_Knear Done ! Result : " , self.kscore )
 			return self.kscore
 	def _NN(self , Split = False):
@@ -85,7 +86,7 @@ class Classification_Strategy_Method:
 		self.nn.fit(self.x , self.y)
 		if Split != False :
 			self.nscore = self.nn.score(self.x_t , self.y_t)
-		if verbose is True :
+		if self.verbose is True :
 			print("_nn Done ! Result : " , self.nscore )
 			return self.nscore
 	def _Forest(self , Split = False):
@@ -95,7 +96,7 @@ class Classification_Strategy_Method:
 		self.forestclf.fit(self.x , self.y)
 		if Split != False :
 			self.fscore = self.forestclf.score(self.x_t , self.y_t)
-		if verbose is True :
+		if self.verbose is True :
 			print("_forest Done ! Result : " , self.fscore )
 			return self.fscore
 	def _Tree(self , Split = False):
@@ -147,13 +148,6 @@ class Classification_Strategy_Method:
 			self.sgdscore = self.sgd.score(self.x_t , self.y_t)
 			return self.sgdscore
 	def _OUT(self , SPLIT):
-#		out = {
-#				"K" : self._Knear(Split = SPLIT) ,
-#				"NN" : self._NN(Split = SPLIT) ,
-#				"FOREST" : self._Forest(Split = SPLIT) ,
-#				"TREE" : self._Tree(Split = SPLIT) ,
-#				"SV" : self._SV(Split = SPLIT) ,
-#				}
 		return [
 				self._Knear(Split = SPLIT) ,
 				self._Forest(Split = SPLIT) ,
@@ -174,7 +168,7 @@ class Classification_Strategy_Method:
 				self.y = Y
 				self.x_original = X
 				self.y_original = Y
-		if verbose is True :
+		if self.verbose is True :
 			print (self._OUT(SPLIT = SPLIT_))
 			return self._OUT(SPLIT = SPLIT_)
 		else :
@@ -191,7 +185,7 @@ class Classification_Strategy_Method:
 			return 2
 		else :
 			return 1
-	def Evaluation_Best_Strategy_Core(self , SPLIT_ = True , x = None , y = None , verbose = False ,
+	def Evaluation_Best_Strategy_Core(self , SPLIT_ = True , x = None , y = None , verbose = True ,
 									 Accuracy = 1 , Mode = 'name'):
 		Accuracy = Accuracy*self.Best_Loop_val()
 		Startegies_performance = []
@@ -210,5 +204,5 @@ class Classification_Strategy_Method:
 
 
 test = Classification_Strategy_Method(x , y)
-test.Evaluation_Best_Strategy_Core(verbose = True , Accuracy= 10)
+test.Evaluation_Best_Strategy_Core(verbose = True , Accuracy= 2)
 res2 = test.__best__()
