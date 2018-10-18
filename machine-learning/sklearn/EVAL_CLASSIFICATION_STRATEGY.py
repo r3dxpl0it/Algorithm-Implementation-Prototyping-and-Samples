@@ -1,4 +1,13 @@
 # -*- coding: utf-8 -*-
+'''_____________________________________________________________________
+|[] R3DXPL0IT SHELL                                            |ROOT]|!"|
+|"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""|"| 
+|CODED BY > R3DXPLOIT(JIMMY)                                          | |
+|EMAIL > RETURN_ROOT@PROTONMAIL.COM                                   | |
+|GITHUB > https://github.com/r3dxpl0it                                | |
+|WEB-PAGE > https://r3dxpl0it.Github.io                               |_|
+|_____________________________________________________________________|/|
+'''
 import Basics as lp
 import pandas as pd
 import numpy as np
@@ -206,3 +215,12 @@ class Classification_Strategy_Method:
 test = Classification_Strategy_Method(x , y)
 test.Evaluation_Best_Strategy_Core(verbose = True , Accuracy= 2)
 res2 = test.__best__()
+'''_____________________________________________________________________
+|[] R3DXPL0IT SHELL                                            |ROOT]|!"|
+|"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""|"| 
+|CODED BY > R3DXPLOIT(JIMMY)                                          | |
+|EMAIL > RETURN_ROOT@PROTONMAIL.COM                                   | |
+|GITHUB > https://github.com/r3dxpl0it                                | |
+|WEB-PAGE > https://r3dxpl0it.Github.io                               |_|
+|_____________________________________________________________________|/|
+'''
