@@ -1,3 +1,12 @@
+'''_____________________________________________________________________
+|[] R3DXPL0IT SHELL                                            |ROOT]|!"|
+|"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""|"| 
+|CODED BY > R3DXPLOIT(JIMMY)                                          | |
+|EMAIL > RETURN_ROOT@PROTONMAIL.COM                                   | |
+|GITHUB > https://github.com/r3dxpl0it                                | |
+|WEB-PAGE > https://r3dxpl0it.Github.io                               |_|
+|_____________________________________________________________________|/|
+'''
 import random 
 POP_SIZE = 5 
 TARGET = [1, 1, 0, 1, 0, 0, 1, 1, 1, 0]
