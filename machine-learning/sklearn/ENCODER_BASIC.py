@@ -1,4 +1,12 @@
-
+'''_____________________________________________________________________
+|[] R3DXPL0IT SHELL                                            |ROOT]|!"|
+|"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""|"| 
+|CODED BY > R3DXPLOIT(JIMMY)                                          | |
+|EMAIL > RETURN_ROOT@PROTONMAIL.COM                                   | |
+|GITHUB > https://github.com/r3dxpl0it                                | |
+|WEB-PAGE > https://r3dxpl0it.Github.io                               |_|
+|_____________________________________________________________________|/|
+'''
 #Lable Encode
 def LABLEENCODER(init_data , cat_num , col = 0  , mode = 'basic' , Hot_encoder = False):
 	from sklearn.preprocessing import LabelEncoder , OneHotEncoder
