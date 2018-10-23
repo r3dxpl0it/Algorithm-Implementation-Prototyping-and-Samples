@@ -1,5 +1,5 @@
 ##### simply-meme is my My Codings Directory and Samples That I use or previously have used for a project or just for fun 
-# This Repo is Under Development 
+I WILL UPDATE THIS REPO USUALLY EVERY WEEK 
 
 - Machine learning Samples In Python
     - Sklearn
