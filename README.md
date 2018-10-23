@@ -12,7 +12,7 @@ I WILL UPDATE THIS REPO USUALLY EVERY WEEK
 > #### Note 
 >I may have Partially Used other Projects, Tutorials, Medium Notes or StackoverFlow Q&A for
 >writing this codes so the honor of this repo is to every great person that have steped into researching 
->and Developing in any area, in any part of the world. 
+>and Developing in this area, in any part of the world. 
 ---
 ##### Problem ? Question ? Coffee ? 
 ###### return_root@protonmail.com
