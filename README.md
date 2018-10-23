@@ -1,4 +1,4 @@
-##### simply-meme is my My Codings Directory and Samples That I use or previously have used for a project or just for fun 
+### simply-meme is My Code Directory and Samples That I use or previously have used for a project or did them just for fun 
 I WILL UPDATE THIS REPO USUALLY EVERY WEEK 
 
 - Machine learning Samples In Python
